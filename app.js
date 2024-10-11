@@ -31,7 +31,7 @@ app.post('/register', async (req,res)=>{
         }else{
             await db.query('INSERT INTO usuarios(first_name,last_name,email,password) VALUES($1,$2,$3,$4)',
                 [nombre,apellido,email,hashedPassword]);
-            res.redirect('/login');
+            res.redirect('/public/index');
         }
     }catch (err){
         console.error('Error during registration: ', err);
