@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="../css/register.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.2/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-<div class="container">
-    <h1 class="title">TO-DOAS</h1>
-</div>
-
 <body>
-    <form class="grid" action="/register" method="POST">
+    <div class="container">
+        <h1 class="title">TO-DOAS</h1>
+    </div>
+
+    <form class="grid" id="registroForm">
         <h2>Registro</h2>
         <h3>Ingresa los siguientes datos para el registro</h3>
         <label for="nombre">Nombre</label><br>
@@ -34,5 +36,7 @@
     </form>
     
     <div id="mensajeError" class="error-message"></div>
+
+    <script src="../js/registro.js"></script> 
 </body>
 </html>
