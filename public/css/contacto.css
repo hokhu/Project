@@ -1,0 +1,117 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url('../img/background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; 
+    margin: 0; /
+   z-index: -1;
+}
+.swal2-container{
+    z-index: 10000;
+}
+.grid {
+    position: absolute; 
+    top: 1%; 
+    left: 180%; 
+    width: 150%; 
+    max-width: 600px; 
+    background-color: rgba(60, 60, 60, 0.8);
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 500px; 
+    z-index: 10; 
+}
+.gridd {
+    position: absolute; 
+    top: 30%; 
+    left: 10%; 
+    width: 150%; 
+    max-width: 600px; 
+    background-color: rgba(60, 60, 60, 0.8);
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 500px; 
+    z-index: 10; 
+}
+
+.contact-section {
+    padding: 50px 0;
+    
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #bcbcbc;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    color: white; 
+    background-color: rgba(255, 0, 0, 0.5); 
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.8); 
+    border-radius: 5px;
+    transition: border-color 0.3s ease, color 0.3s ease; 
+}
+
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 0, 0, 1); 
+    border-color: rgba(255, 0, 0, 1); 
+    cursor: pointer; 
+}

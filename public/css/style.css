@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url('../img/background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; 
+    margin: 0;
+    z-index: -1;
+}
+.swal2-container{
+    z-index: 10000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color:rgba(0, 0, 0, 0.9);
+    padding: 15px 5px;
+    width: 100%; 
+}
+
+.header a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    display: inline-block; 
+    background-image: url('../img/logod.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100px; 
+    height: 50px; 
+}
+
+.header a.logo:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header a:hover {
+    background-color: white;
+    color: red;
+}
+
+.header a.reg {
+    background-color:rgba(255, 0, 0, 0.5);
+    color: white;
+}
+
+.header-right {
+    display: flex; 
+    align-items: center; 
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  
+    .header-right {
+        float: none;
+    }
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 32%; 
+}
+h1{
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-top: 20px; 
+    text-align: center;
+
+}
+.top-elementos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+}
+.grid {
+    position: absolute; 
+    top: 25%; 
+    left: 15%; 
+    width: 100%; 
+    max-width: 400px; 
+    height: 720px; 
+    z-index: 10; 
+}
+
+.conteiner-elementos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.conteiner-elementos a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+.card-elemento{
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+
+}
+
+ .conteiner-elementos a.est {
+    display: inline-block; 
+    background-image: url('../img/Estudiante.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 20rem; 
+    height: 20rem; 
+    border-radius: 2rem;
+} 
+
+.conteiner-elementos a.adm {
+    display: inline-block; 
+    background-image: url('../img/Administrativos.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 20rem; 
+    height: 20rem; 
+    border-radius: 2rem;
+}  
+
+
+.conteiner-elementos a.ins {
+    display: inline-block; 
+    background-image: url('../img/institucion.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 20rem; 
+    height: 20rem; 
+    border-radius: 2rem;
+}  
+

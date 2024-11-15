@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url('../img/background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; 
+    margin: 0; /
+   z-index: -1;
+}
+.swal2-container{
+    z-index: 10000;
+}
+.grid {
+    position: absolute; 
+    top: 1%; 
+    left: 1%; 
+    width: 150%; 
+    max-width: 1250px; 
+    background-image: url('../img/colegio.jpg');
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 1080px; 
+    z-index: 10; 
+}
+
+.gridd {
+    position: absolute; 
+    top: 30%; 
+    left: 60%; 
+    width: 150%; 
+    max-width: 800px; 
+    background-color: rgba(145, 145, 145, 0.8); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 400px; 
+    z-index: 10; 
+}
+p {
+    
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
